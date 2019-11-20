@@ -18,31 +18,26 @@ namespace SplitStringInBalancedStrings
         }
         private static int BalancedStringSplit (string s)
         {
-            //List<String[]> matchingStrings = new List<string[]>();
-            Queue<char> queue = new Queue<char>();
-            StringBuilder sb;
-            int counter = 0;
-            foreach (var c in s)
+            int i = 0;
+            for (var j = 0; j < s.Length; j++)
             {  //Queue the items; as soon as you see a transition...
-                
-                if (c == 'R')
+                if (queue.Count() == 0)
                 {
-                    
-                    queue.Enqueue(c);
-                }  else
-                {   
-                   sb = new StringBuilder();
-                   while (queue.Count>0)//start taking items out of the queue and build a string
-                   {
-                     sb.Append(queue.Dequeue());
-                     sb.Append(c);
-                   }
-                   Console.WriteLine(sb);
-                   if (sb.Length > 0) { counter++; }
+                    queue.Enqueue(s[j]);
                 }
-                
+                if (queue.Count>0 && s[j] == queue.Peek())
+                {
+                   queue.Enqueue(s[j]);
+                   continue;
+                }  else if (queue.Count() > 0 && s[j] != queue.Peek())
+                {  // i.e. if c is different from what is in the queue
+                   //start taking items out of the queue and build a string
+                   
+                   sb.Append(queue.Dequeue());
+                   sb.Append(s[j]);
+                   continue;
+                }
             }
-
             return counter;
         }
     }
