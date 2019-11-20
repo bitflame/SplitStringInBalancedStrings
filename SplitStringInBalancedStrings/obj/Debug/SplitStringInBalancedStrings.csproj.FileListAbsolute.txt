@@ -1,0 +1,6 @@
+C:\Users\usr\source\repos\SplitStringInBalancedStrings\SplitStringInBalancedStrings\bin\Debug\SplitStringInBalancedStrings.exe.config
+C:\Users\usr\source\repos\SplitStringInBalancedStrings\SplitStringInBalancedStrings\bin\Debug\SplitStringInBalancedStrings.exe
+C:\Users\usr\source\repos\SplitStringInBalancedStrings\SplitStringInBalancedStrings\bin\Debug\SplitStringInBalancedStrings.pdb
+C:\Users\usr\source\repos\SplitStringInBalancedStrings\SplitStringInBalancedStrings\obj\Debug\SplitStringInBalancedStrings.csprojAssemblyReference.cache
+C:\Users\usr\source\repos\SplitStringInBalancedStrings\SplitStringInBalancedStrings\obj\Debug\SplitStringInBalancedStrings.exe
+C:\Users\usr\source\repos\SplitStringInBalancedStrings\SplitStringInBalancedStrings\obj\Debug\SplitStringInBalancedStrings.pdb
